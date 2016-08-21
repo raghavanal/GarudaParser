@@ -26,24 +26,36 @@ public class InputPOJO {
 			return OpenPrice;
 		}
 		public void setOpenPrice(String openPrice) {
+			if (openPrice == "-")
+				OpenPrice = "0";
+			else		
 			OpenPrice = openPrice;
 		}
 		public String getHighPrice() {
 			return HighPrice;
 		}
 		public void setHighPrice(String highPrice) {
+			if (highPrice == "-")
+				HighPrice = "0";
+			else
 			HighPrice = highPrice;
 		}
 		public String getLowPrice() {
 			return LowPrice;
 		}
 		public void setLowPrice(String lowPrice) {
+			if(lowPrice == "-")
+				LowPrice = "0";
+			else
 			LowPrice = lowPrice;
 		}
 		public String getClosePrice() {
 			return ClosePrice;
 		}
 		public void setClosePrice(String closePrice) {
+			if (closePrice == "-")
+				ClosePrice = "0";
+			else
 			ClosePrice = closePrice;
 		}
 		public String getVolume() {
